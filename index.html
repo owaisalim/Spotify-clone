@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="untility.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="flex header-ul"  >
+                <li><img class="spotify-icon" src="https://img.icons8.com/?size=100&id=11116&format=png&color=FFFFFF" alt=""></li>
+             
+                <li class="search-box">
+                    <img src="https://img.icons8.com/?size=100&id=i6fZC6wuprSu&format=png&color=FFFFFF" alt="home" class="home-icon">
+                    <div class="search-bar" >  
+                            <input  type="text" placeholder="what do you want to play" >
+                            <img class="search-icon"  src="https://img.icons8.com/?size=100&id=7695&format=png&color=FFFFFF" alt="">
+                            <span class="line"></span>
+                            <img class="browse-icon" src="https://img.icons8.com/?size=100&id=37918&format=png&color=FFFFFF" alt="">
+                    </div>
+                </li>
+                <li>
+                    <button class="profile-btn" >Sign Up</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+             <img class="close-icon" src="https://img.icons8.com/?size=100&id=8112&format=png&color=FFFFFF" alt="">
+            <div class="heading" >
+                <div class="your-library" >
+                    <span> <img  src="https://img.icons8.com/?size=100&id=9JZ2d8m_PeKK&format=png&color=FFFFFF" alt=""></span>
+                <span class="library-text" >your library</span>
+                </div>
+          
+            <div class="left-icons-container" >
+                <img  class="plus-icon" src="https://img.icons8.com/?size=100&id=11153&format=png&color=FFFFFF" alt="">
+                <img class="right-arrow" src="https://img.icons8.com/?size=100&id=355&format=png&color=FFFFFF" alt="">
+            </div>
+        </div>
+        <button class="playList-btn">Playlists</button>
+        <div class="songList">
+          <ul>
+           
+          </ul>
+        </div>
+        </div>
+        <div class="right">
+            <nav class="right-nav" >
+                <img class="hamburger" src="https://img.icons8.com/?size=100&id=MG0P3sOllj1c&format=png&color=FFFFFF" alt="">
+            </nav>
+            <h1>SpotifyPlaylist</h1>
+
+            <div class="cardContainer">
+                <div data-folder="arijit" class="card" >
+
+                    <div class="play-icon" > <img src="https://img.icons8.com/?size=100&id=3840&format=png&color=000000" alt=""></div>
+                    
+                    <img src="arijit singh.jpg" alt="image">
+                    <span class="Artist" >Arijit Singh</span>
+                    <p class="description" >Best Arijit Singh song new hollywood playlist </p>
+                </div>
+                <div data-folder="ncs" class="card">
+
+                    <div class="play-icon"><img src="https://img.icons8.com/?size=100&id=3840&format=png&color=000000" alt=""></div>
+                    
+                    <img src="mix pakistani.jpg" alt="image">
+                    <span class="Artist" >Mix Pakistani</span>
+                    <p class="description">All Pakistani mix sindhi songs old and new</p>
+                </div>
+            
+                <div data-folder="coke" class="card">
+
+                    <div class="play-icon"><img src="https://img.icons8.com/?size=100&id=3840&format=png&color=000000" alt=""></div>
+                    
+                    <img src="coke studio.jpg" alt="image">
+                    <span class="Artist" >Coke Studio</span>
+                    <p class="description">New coke studio songs</p>
+                </div>
+           
+            
+        
+            </div>
+        </div>
+
+      
+    </div>
+        <div class="play-bar">
+            
+            
+            <div class="play-btns" >
+
+                    <img id="previous" src="https://img.icons8.com/?size=100&id=FVpu6zm0IxlG&format=png&color=FFFFFF" alt="">
+                    <img id="play" src="https://img.icons8.com/?size=100&id=rO5ATRDGnabW&format=png&color=FFFFFF" alt="">
+                    <img id="next" src="https://img.icons8.com/?size=100&id=FzvqAXv60NEr&format=png&color=FFFFFF" alt="">
+               
+                </div> 
+              
+                <div class="barr" >
+
+                    
+                    <div class="songinfo"></div>
+                    
+                    
+                    <div class="seekbar-Cont" > 
+                        <div class="songTime" >00:00/00:00</div>
+                        <div class="seekbar">
+                            <div class="seekball" ></div>
+                        </div>
+                        <div class="total-duration" ></div>
+                    </div>
+                    
+                    
+                    <div class="volume-cont" >
+                        <img class="volume-icon" src="https://img.icons8.com/?size=100&id=9980&format=png&color=FFFFFF" style="width: 20px;" alt="">
+                        <input class="range" type="range">
+                        <div class="vol-percent" ></div>
+                    </div>
+                    
+                </div>
+     
+     
+    </div>
+
+       
+  
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>

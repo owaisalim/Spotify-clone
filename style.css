@@ -1,0 +1,567 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --a:0;
+}
+body{
+    background-color:black;
+    margin: 0px;
+    color: white;
+    padding: 0px;
+    
+}
+.container{
+    display: flex;
+    margin-bottom: 65px;
+    
+}
+
+
+.right{
+    width: 75vw;
+    background-color:#1f1f1f ;
+    border-radius: 10px;
+    margin: 3px;
+   
+
+
+}
+
+.left{
+width: 25vw;
+background-color: #1f1f1f;
+max-height: 90vh;
+border: none;
+border-radius: 10px;
+margin: 3px;
+
+}
+
+
+.header-ul{
+    justify-content:space-between;
+    list-style: none;
+}
+.spotify-icon{
+    width: 40px;
+    padding: 6px 5px;
+    height: 40px;
+    cursor: pointer;
+
+}
+.line{
+    width: 0px;
+    height: 20px;
+    border: 1px solid;
+    background-color: white;
+    color: white;
+    position: absolute;
+    right:80px;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    cursor:pointer;
+}
+
+
+.home-icon{
+    width: 28px;
+    height: 28px;
+    border-radius: 27px;
+    background-color: #1f1f1f;
+    padding: 10px 10px;
+    
+}
+.home-icon:hover{
+    background-color: #494848af
+
+}
+
+.search-icon{
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.browse-icon{
+    width: 25px;
+    position: absolute;
+    top:11px;
+    right: 40px;
+
+}
+
+.search-bar input{
+    min-width: 330px;
+    height: 35px;
+    border-radius: 31px;
+    padding: 6px 50px;
+    background-color: #1f1f1f;
+    color: white;
+    font: 14px;
+    border: 1px solid black;
+}
+.search-bar input:hover{
+    background-color: #494848af
+}
+
+.search-box{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.heading{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+.your-library{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: #9d9d9d
+}
+.your-library:hover{
+    color: white;
+
+}
+.your-library img{
+ 
+    width: 30px;
+
+}
+.plus-icon{
+    width: 26px;
+    padding: 0px 1px;
+    /* background: green; */
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+.right-arrow{
+    width: 26px;
+    padding: 1px 1px;
+    /* background: green; */
+    border-radius: 25px;
+    cursor: pointer;
+}
+.left-icons-container{
+     
+}
+.right-arrow:hover{
+     background: rgba(98, 101, 98, 0.646);
+    cursor: pointer;
+
+}
+.plus-icon:hover{
+     background: rgba(98, 101, 98, 0.646);
+    cursor: pointer;
+
+}
+
+.playList-btn{
+    padding: 7px 11px;
+    margin: 8px;
+    background-color:#343434;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+   
+}
+
+.playList-btn:hover{
+    background-color: #484747;
+}
+
+.right h1{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-size: 30px;
+ padding: 0px 12px;
+}
+.card{
+    width: 200px;
+    /* border: 2px solid green; */
+    /* height: 500px; */
+   padding:4px;
+/* background-color: gray; */
+height: 250px;
+margin: 10px;
+cursor: pointer;
+border-radius: 8px;
+background-color: #2f2f2fcf;
+position: relative;
+
+}
+
+
+.card:hover{
+    background-color:#555555ea;
+    transition: all 0.4s;
+    --a:1;
+}
+
+.cardContainer{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+   }
+.Artist{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 18px;
+}
+.description{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 16px;
+}
+.play-icon{
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 20px;
+    background-color:#5bd65b;
+    position: absolute;
+    right: 25px;
+    top: 75px;
+    opacity:var(--a);
+    transition: all 0.4s ease-in-out;
+}
+.play-icon img{
+    width: 25px;
+    position: absolute;
+    left: 7px;
+    bottom: 5px;
+}
+
+.profile-btn{
+    margin: 0px 12px;
+    padding: 10px 11px;
+    background-color: #4c4c4c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.profile-btn:hover{
+ background-color: #1f1f1f;   
+}
+
+.play-bar-cont{
+    /* position: fixed; */
+}
+
+.play-bar{
+    position: fixed;
+    bottom: 0px;
+  
+    background-color: rgb(13, 14, 13);
+    /* background-color: green; */
+    width: 100%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+.play-btns{
+    display: flex;
+    width: 82%;
+    margin: auto;
+    gap: 20px;
+    /* background-color: green; */
+    align-items: center;
+    justify-content:center;
+    /* background-color: blue; */
+
+}
+.btnn{
+   
+    width: 15%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+.play-bar img{
+  width: 35px;
+  cursor: pointer;
+
+}
+
+.seekbar{
+    width: 46%;
+    height: 3px;
+    background-color: #616060b5;
+    border: none;
+    border-radius: 10px;
+    /* border: 2px solid white; */
+    /* position: absolute; */
+  
+    /* padding: 0px 2px; */
+    margin-top: 3px;
+   cursor: pointer;
+   
+}
+
+.seekball{
+    position: relative;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 16px;
+    bottom: 3px;
+    background-color: white;
+}
+.songList{
+ width: 100%;
+ max-height: 70%;
+ overflow: auto;
+
+
+ 
+}
+
+.songList ul li{
+    display: flex;
+        gap: 9px;
+        padding: 13px 0px;
+        list-style-type: decimal;
+        font-size: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        cursor: pointer;
+        border: 2px solid #3d3d3db0;
+        border-radius: 5px;
+        margin: 13px 0px;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.songList ul li:hover{
+    background-color: #343434;
+}
+.songList ul {
+    padding: 5px 5px;
+    overflow: hidden;
+}
+.songList ul li img {
+   width:25px;
+}
+.playnow{
+    display: flex
+;
+    gap: 10px;
+    /* background-color: #5bd65b; */
+    align-items: center;
+    justify-content: center;
+    width: 118px;
+
+
+}
+.info{
+    width: 200px;
+
+}
+
+.songName{
+    max-width: 95%;
+    overflow: hidden;
+    line-break: anywhere;
+}
+.seekbar-Cont{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    width: 73%;
+    
+
+}
+.songinfo{
+   
+
+    font-size: 12px;;
+    overflow: hidden;
+    line-break: anywhere;
+ color: #b3b7ba;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+   padding-left: 20px;
+   max-width: 250px;
+  
+}
+
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.songTime{
+    font-size: 12px;
+ color: #b3b7ba;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+.total-duration{
+    font-size: 12px;
+ color: #b3b7ba;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+
+.close-icon{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    display: none;
+}
+
+.right-nav{
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    display: none;
+}
+
+.barr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volume-cont{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 15px;
+    margin-right: 50px;
+}
+
+
+
+@media only screen and (max-width:1120px) {
+    .left{
+        
+        position: absolute;
+        left: -100%;
+        transition:all 0.5s ;
+        z-index: 1;
+        width: 45%;
+        overflow-y: scroll;
+        background-color: black;
+        border: 2px solid #606060de;
+        border-radius: 6px;
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+   
+.right{
+    width: 100vw
+
+}
+
+.right-nav{
+  
+    width: 100%;
+    height: 50px;
+    background-color: #3939399e;
+    display: block;
+
+}
+.right-nav img{
+  
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    padding: 9px 5px;
+    margin: 3px 14px;
+    border-radius: 61px;
+}
+.right-nav img:hover{
+    background-color: rgba(91, 95, 91, 0.664);
+
+}
+.close-icon{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+    padding: 5px 5px;
+    margin: 4px 4px;
+    border-radius: 61px;
+  
+}
+
+.close-icon:hover{
+    background-color: rgba(91, 95, 91, 0.664);
+    
+}
+
+.barr{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.volume-cont{
+    margin-right: 0px;
+}
+
+
+
+    
+}
+
+@media only screen and (max-width:700px) {
+    .container{
+       
+       
+    }
+}
+
+
+
